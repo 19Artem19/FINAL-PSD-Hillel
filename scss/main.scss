@@ -93,11 +93,13 @@
 
   .nav-header li a {
     color: $white !important;
-    border-top: 1px solid transparent !important;
+    border-top: 5px solid transparent !important;
   }
-
+  .nav-header li {
+    padding: 0 30px 0 0;
+  }
   .nav-header li a:hover {
-    border-top: 1px solid #32b0ee !important;
+    border-top: 5px solid #32b0ee !important;
   }
 }
 
@@ -513,7 +515,6 @@
     padding-bottom: 50px;
   }
 }
-
 
 @media (max-width: 575px) {
   .logo-header {
