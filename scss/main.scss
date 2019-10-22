@@ -62,9 +62,29 @@
   }
 }
 
+h1 {
+  font-size: $h1-font-size;
+  font-weight: 300;
+  span {
+    font-weight: 700;
+  }
+}
+h2 {
+  font-size: $h2-font-size;
+  .creative {
+    color: #0ed691;
+  }
+  font-weight: 300;
+}
+h3 {
+  font-weight: 800;
+  font-size: $h3-font-size;
+  color: $hover-color;
+  text-transform: uppercase;
+}
 /*Header container*/
 .header-container {
-  /*background: rgb(207, 208, 215,0.5);*/
+  background: rgba(16, 22, 54, 0.2);
   position: absolute;
   z-index: 16;
   width: 100%;
@@ -80,11 +100,13 @@
     background: url(../../images/Brandi.png) no-repeat;
     height: 30px;
     width: 100px;
-    border-right: 1px solid rgba(21, 68, 87, 0.8);
   }
 
   .logo-text {
     padding-left: 14px;
+    font-size: $font-size-base-alternative;
+    color: rgba(255, 255, 255, 0.4);
+    border-left: 1px solid rgba(21, 68, 87, 0.8);
   }
 }
 
@@ -93,31 +115,48 @@
 
   .nav-header li a {
     color: $white !important;
-    border-top: 5px solid transparent !important;
+    border-top: 1px solid transparent !important;
   }
   .nav-header li {
     padding: 0 30px 0 0;
   }
   .nav-header li a:hover {
-    border-top: 5px solid #32b0ee !important;
+    border-top: 1px solid #32b0ee !important;
   }
 }
 
 /* SLIDER TEXT*/
 .carousel-text {
   p {
-    font-size: $header-slider-description;
-
-    .creative {
-      color: #0fda93;
-    }
+    font-size: $p-font-size2;
+    color: rgba(255, 255, 255, 0.6);
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 0 !important;
+    padding-bottom: 100px;
+  }
+  p::before {
+    content: "";
+    border-top: 1px solid #0ed691;
+    position: absolute;
+    width: 30px;
+    top: 15px;
+    left: 264px;
+  }
+  p::after {
+    content: "";
+    border-top: 1px solid #0ed691;
+    position: absolute;
+    width: 30px;
+    top: 15px;
+    right: 264px;
   }
 }
 
 .carousel-indicators {
   position: absolute;
   right: 50px;
-  bottom: 0;
+  bottom: 50%;
   left: auto;
   z-index: 15;
   display: flex;
@@ -137,7 +176,7 @@
     margin-left: 0;
     text-indent: -999px;
     cursor: pointer;
-    border: 1px solid red;
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 50%;
     background-color: transparent;
     background-clip: padding-box;
@@ -155,11 +194,23 @@
 .slick-initialized .slick-slide {
   padding: 0 30px 0 60px;
 }
-
-/*Block2*/
+.social-icons-conteiner {
+  a {
+    color: rgba(255, 255, 255, 0.4);
+    padding-right: 18px;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $white;
+  }
+}
+/*FEAUTERS HEADER*/
 .features-header {
   text-align: center;
   margin-bottom: 60px;
+  h3 {
+    padding-top: 76px;
+  }
 
   .heart-container {
     display: flex;
@@ -190,7 +241,16 @@
     }
   }
 }
-
+.feature-text {
+  strong {
+    font-weight: 600;
+    font-size: $p-font-size3;
+  }
+  p{
+    font-size: $font-size-base-alternative;
+    color: $color-text1;
+  }
+}
 .features-wrapper {
   background: #f4f7f9;
   padding: 0 0 28px 0;
@@ -230,6 +290,23 @@
 .features-col {
   padding-left: 70px;
 }
+.slick-dots li {
+  position: relative;
+  display: inline-block;
+  width: 8px !important;
+  height: 8px !important;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+  border: 1px solid #c7ced4;
+  border-radius: 50%;
+}
+.slick-dots .slick-active {
+  background-color:#062033;
+}
+.slick-dots li button:before {
+  content: "" !important;
+}
 
 /*<!-- Work container -->*/
 
@@ -241,7 +318,12 @@
 .works-header {
   text-align: center;
   margin-bottom: 60px;
-
+p {
+  color: $color-text1;
+  font-weight: 600;
+  font-size: $p-font-size2;
+  padding-top: 30px;
+}
   .heart-container {
     display: flex;
     justify-content: center;
@@ -271,7 +353,14 @@
     }
   }
 }
-
+.works-hover {
+  strong{
+    font-size: $p-font-size2;
+  }
+  p {
+    font-size: $font-size-base;
+  }
+}
 .lists-work li {
   list-style: none;
   padding: 10px 10px 10px 10px;
@@ -281,21 +370,19 @@
     text-decoration: none;
     padding: 10px 20px;
     border: 1px solid transparent;
+    font-weight: 700;
+    font-size: $font-size-base;
   }
 
   a:hover {
-    background: #0eb493;
+    background: $hover-color;
     border-radius: 5px;
-    color: #fff;
+    color: $white;
+    font-weight: 700;
   }
 }
 
-// .works-photo {
-//   display: flex;
-//   flex-wrap: wrap;
-//   width: 1600px;
-//   margin: auto;
-// }
+
 
 .works-photo .work-photo {
   min-height: 300px;
@@ -343,7 +430,7 @@
   background-image: url(../../images/works8.png);
 }
 
-/*TEAM    сделать миксину на сердце!!!!*/
+/*TEAM */
 .team-header {
   text-align: center;
   margin-bottom: 60px;
