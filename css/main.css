@@ -7759,7 +7759,7 @@ textarea {
   .carousel-text h1 {
     font-size: 18px; }
   .carousel-text p {
-    font-size: 16px; }
+    font-size: 7px; }
   .works-photo .work-photo {
     min-height: 150px; }
   .navbar-header {
@@ -7794,22 +7794,80 @@ textarea {
     .team-header h2,
     .works-header h2,
     .features-header h2 {
-      font-size: 18px; }
+      font-size: 5px; }
+  .carousel-indicators {
+    bottom: 20%; }
   .carousel-caption {
     bottom: 10px;
     padding: 0; }
-    .carousel-caption.carousel-text h1 {
-      font-size: 16px; }
-    .carousel-caption.carousel-text p {
-      font-size: 14px;
-      margin: 0; }
-  .lists-work li a {
-    padding: 5px;
+  .carousel-text p {
+    padding-bottom: 50px;
+    font-size: 10px; }
+  .carousel-text p::after {
+    width: 15px;
+    top: 8px;
+    right: 250px; }
+  .carousel-text p::before {
+    width: 15px;
+    top: 8px;
+    left: 250px; }
+  .carousel-text h1 {
+    font-size: 16px; }
+  .carousel-text h2 {
     font-size: 12px; }
+  .carousel-text p {
+    font-size: 10px;
+    margin: 0; }
+  .lists-work li a {
+    padding: 5px 15px;
+    font-size: 12px; }
+  .team-header {
+    padding-top: 30px; }
   .our-team {
     padding-top: 25px;
     padding-bottom: 0; }
+  .clock-cantainer .facts {
+    font-size: 30px; }
+  .clock-cantainer {
+    padding-bottom: 80px; }
+  .contacts {
+    text-align: center; }
+  h5 {
+    text-align: center;
+    padding-top: 20px; }
+  .form-icons {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    padding-top: 40px; }
+  .text-right {
+    text-align: center !important; }
+  .form-wrapper {
+    padding-bottom: 40px; }
   .footer-container {
-    padding: 15px 0; }
+    padding: 15px 0;
+    text-align: center; }
     .footer-container .row > * {
-      margin: 10px 0; } }
+      margin: 10px 0; }
+    .footer-container .footer-logo {
+      padding-top: 40px; }
+      .footer-container .footer-logo p {
+        padding-top: 20px; }
+    .footer-container .footer-form {
+      padding-top: 40px; }
+      .footer-container .footer-form .form-group {
+        padding-top: 20px; }
+  .shape::before {
+    top: 96px;
+    left: 310px; }
+  .footer-wrapper .footer-list {
+    padding-top: 20px; }
+  .footer-wrapper .footer-list .footer-lists ul {
+    padding: 20px 0 0 0 !important; }
+  .footer-wrapper .footer-info {
+    padding-top: 70px; }
+  .footer-info p:first-child {
+    border-top: 1px solid #177e72;
+    border-left: 0;
+    padding-top: 10px; }
+  .footer-wrapper {
+    padding-bottom: 10px; } }
