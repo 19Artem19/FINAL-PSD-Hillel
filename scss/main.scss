@@ -94,7 +94,9 @@ h4 {
   z-index: 16;
   width: 100%;
 }
-
+.navbar-header {
+  justify-content: flex-end;
+}
 .logo-header {
   color: $white;
   font-size: 20px;
@@ -688,16 +690,103 @@ textarea {
   background-size: cover;
   min-height: 215px;
 }
+/*FOOTER*/
 
 .footer-container {
   border-top: 5px solid #062033;
   background-color: #1ea78d;
 }
 
-.navbar-header {
-  justify-content: flex-end;
+.footer-wrapper {
+  padding-bottom: 128px;
+  color: $white;
+  h6 {
+    font-weight: 700;
+    font-size: $font-size-base;
+  }
+  .footer-logo {
+    padding-top: 100px;
+    p {
+      font-size: $font-size-base-alternative;
+      padding-top: 46px;
+    }
+  }
+  .footer-form {
+    padding-top: 100px;
+    p {
+      font-size: $font-size-base-alternative;
+    }
+    .form-group {
+      padding-top: 52px;
+    }
+  }
+  .footer-list {
+    padding-top: 100px;
+    .footer-lists li {
+      list-style: none;
+      padding-bottom: 15px;
+      a {
+        color: $white;
+        font-size: $font-size-base;
+      }
+    }
+    .footer-lists ul {
+      padding: 44px 0 0 0 !important;
+    }
+  }
+  .footer-info {
+    padding-top: 170px;
+    .reserved {
+      color: $black;
+      font-size: $font-size-base-alternative;
+    }
+  }
 }
 
+.form-control-footer {
+  background: 0;
+  border: 2px solid $white;
+  border-radius: 2px;
+  position: relative;
+  padding: 6px 32px 6px 12px;
+}
+.form-control-footer:focus {
+  background: 0;
+  border: 2px solid $white;
+  color: $white;
+  outline: none;
+}
+.shape::before {
+  content: "";
+  background: url(../../images/footershape.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 186px;
+  right: 65px;
+}
+
+.footer-info {
+  i {
+    background: url(../../images/sprite.png) no-repeat -84px -156px;
+    width: 18px;
+    height: 14px;
+    display: inline-block;
+  }
+  a {
+    color: $color-text2;
+  }
+  p:first-child {
+    border-left: 1px solid #177e72;
+    padding-left: 12px;
+  }
+  .reserved {
+    padding-top: 48px;
+  }
+}
+////////////////////////////////////////
+/* MEDIA*/
 @media (max-width: 991px) {
   .logo-header {
     .logo-text {

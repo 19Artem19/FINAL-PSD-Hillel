@@ -7161,6 +7161,9 @@ h4 {
   z-index: 16;
   width: 100%; }
 
+.navbar-header {
+  justify-content: flex-end; }
+
 .logo-header {
   color: #fff;
   font-size: 20px;
@@ -7672,13 +7675,84 @@ textarea {
   background-size: cover;
   min-height: 215px; }
 
+/*FOOTER*/
 .footer-container {
   border-top: 5px solid #062033;
   background-color: #1ea78d; }
 
-.navbar-header {
-  justify-content: flex-end; }
+.footer-wrapper {
+  padding-bottom: 128px;
+  color: #fff; }
+  .footer-wrapper h6 {
+    font-weight: 700;
+    font-size: 0.875rem; }
+  .footer-wrapper .footer-logo {
+    padding-top: 100px; }
+    .footer-wrapper .footer-logo p {
+      font-size: 0.8125rem;
+      padding-top: 46px; }
+  .footer-wrapper .footer-form {
+    padding-top: 100px; }
+    .footer-wrapper .footer-form p {
+      font-size: 0.8125rem; }
+    .footer-wrapper .footer-form .form-group {
+      padding-top: 52px; }
+  .footer-wrapper .footer-list {
+    padding-top: 100px; }
+    .footer-wrapper .footer-list .footer-lists li {
+      list-style: none;
+      padding-bottom: 15px; }
+      .footer-wrapper .footer-list .footer-lists li a {
+        color: #fff;
+        font-size: 0.875rem; }
+    .footer-wrapper .footer-list .footer-lists ul {
+      padding: 44px 0 0 0 !important; }
+  .footer-wrapper .footer-info {
+    padding-top: 170px; }
+    .footer-wrapper .footer-info .reserved {
+      color: #000;
+      font-size: 0.8125rem; }
 
+.form-control-footer {
+  background: 0;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  position: relative;
+  padding: 6px 32px 6px 12px; }
+
+.form-control-footer:focus {
+  background: 0;
+  border: 2px solid #fff;
+  color: #fff;
+  outline: none; }
+
+.shape::before {
+  content: "";
+  background: url(../../images/footershape.png) no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  top: 186px;
+  right: 65px; }
+
+.footer-info i {
+  background: url(../../images/sprite.png) no-repeat -84px -156px;
+  width: 18px;
+  height: 14px;
+  display: inline-block; }
+
+.footer-info a {
+  color: #062033; }
+
+.footer-info p:first-child {
+  border-left: 1px solid #177e72;
+  padding-left: 12px; }
+
+.footer-info .reserved {
+  padding-top: 48px; }
+
+/* MEDIA*/
 @media (max-width: 991px) {
   .logo-header .logo-text {
     font-size: 14px; }
