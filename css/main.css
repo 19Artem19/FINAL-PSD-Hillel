@@ -7257,7 +7257,7 @@ h4 {
 .social-icons-conteiner a:hover {
   color: #fff; }
 
-/*FEAUTERS HEADER*/
+/*Features container*/
 .features-header {
   text-align: center;
   margin-bottom: 60px; }
@@ -7341,7 +7341,7 @@ h4 {
 .slick-dots li button:before {
   content: "" !important; }
 
-/*<!-- Work container -->*/
+/*Work container*/
 .works-wrapper {
   background: #fff;
   margin-top: 50px; }
@@ -7531,7 +7531,7 @@ h4 {
   padding-top: 100px;
   padding-bottom: 200px; }
 
-/*<!--SOME FAN FACTS-->*/
+/*SOME FAN FACTS*/
 .facts-header {
   text-align: center;
   margin-bottom: 60px;
